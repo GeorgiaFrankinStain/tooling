@@ -1,0 +1,8 @@
+#!/bin/bash
+
+scp bin/lab3 timofeev@jet.cpct.sibsutis.ru:~/work/pvt_lab_3
+# scp tests/* timofeev@jet.cpct.sibsutis.ru:~/work/pvt_lab_2/tests
+
+# ssh timofeev@jet.cpct.sibsutis.ru 'mpicc -Wall -lm -o ~/work/pvt_lab_2/run ~/work/pvt_lab_2/*.c'
+ssh timofeev@jet.cpct.sibsutis.ru 'cd ~/work/pvt_lab_2; make'
+# ssh timofeev@jet.cpct.sibsutis.ru 'cd ~/work/pvt_lab_2; qsub ~/work/pvt_lab_2/task.job'
