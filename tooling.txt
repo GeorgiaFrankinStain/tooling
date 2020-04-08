@@ -1,7 +1,33 @@
 RegExp
 	удалить все строки, не содержащие name
 		^(?!.*name.*).*$
+	удалить все строки, оканчивающиеся на DEBUG_FORCE
+		\n.*DEBUG_FORCE$
 
 	поменять местами части строки
 		<a name=\"(.*)\">(.*)</a>
 		[$2]\(#$1\)
+
+	(<A HREF=".*">)(.*)</A>
+	^(    ){1, 1}<H3>(.*)</H3>
+
+
+	(?s)^ {4, 4}<H3>(.*?)</H3>(.*?)<A HREF(.*?)<TAGS.*?\n.*?<A HREF.*?\n
+ {4}<H3>$1</H3>$2<A HREF$3<TAGS $1>
+
+
+
+
+
+КОМАНДЫ
+	git log --pretty=format:"%h %s" --graph
+	git reset --hard HEAD //отменить все незакоммиченные изменения
+
+
+
+
+ОБОЗНАЧЕНИЯ В КОММЕНТАРИЯХ
+	//FIXME DELETE AFTER MOVE
+	//DEBUG_DELETE
+	//DEBUG_DELETE_BLOCK_START
+	//DEBUG_DELETE_BLOCK_END

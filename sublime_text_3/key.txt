@@ -3,6 +3,8 @@
 	{ "keys":["ctrl+alt+shift+t"], "command" : "replacinglettersonlatin"},
 	{ "keys":["ctrl+alt+shift+r"], "command" : "randomstring"},
 	{ "keys":["ctrl+alt+shift+u"], "command" : "zamenaundeline"},
+	{ "keys":["ctrl+alt+shift+c"], "command" : "inlowercamelcase"},
 	{ "keys": ["shift+f5"], "command": "rename_file", "args": { "paths": ["$file"] } },
+	{ "keys":["ctrl+alt+shift+l"], "command" : "antihierarchization"},
 	{ "keys": ["ctrl+alt+shift+h"], "command": "incrementor_prompt"}
 ]
