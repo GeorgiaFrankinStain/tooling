@@ -25,12 +25,12 @@ set mytics 1
 
 set logscale x
 # set logscale y
-set format y "%.9f"
-# set format y "10^{%L}"
+# set format y "%2.f"
+set format y "10^{%L}"
 # set format y "%.2f"
 set xlabel "Номер испытания" font "Arial, 16"
-# set format x "%.f" 
-set format x "10^{%L}"
+set format x "%.f" 
+# set format x "10^{%L}"
 set ylabel "Время одной функции" font "Arial, 16"
 
 

@@ -13,7 +13,13 @@ RegExp
 
 
 	(?s)^ {4, 4}<H3>(.*?)</H3>(.*?)<A HREF(.*?)<TAGS.*?\n.*?<A HREF.*?\n
- {4}<H3>$1</H3>$2<A HREF$3<TAGS $1>
+	{4}<H3>$1</H3>$2<A HREF$3<TAGS $1>
+
+
+	Simply use this: (?=,)(.*\n?)(?=;) which finds starting character with (?=,) and ending (?=;) and replace it with an empty string.
+		(?=,)(.*\n?)(?=;)
+
+
 
 
 
